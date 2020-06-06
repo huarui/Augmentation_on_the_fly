@@ -1,11 +1,11 @@
 # Augmentation on the fly
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
 
-Library to perform augmentation of images for training deep learning models during the training stage. The 
+Python library to perform augmentation of images for training deep learning models during the training stage. The 
 transformations will be performed in the pre-processing step.
 
-This library is an alternative to <a href=https://github.com/mdbloice/Augmentor> Augmentor </a>, which performs 
-image augmentations to be stored in memory or creates an ready to use generator
+This library is an alternative to <a href=https://github.com/mdbloice/Augmentor> Augmentor</a>, which performs 
+image augmentations to be stored in memory or creates a ready-to-use generator
 for some of the main deep learning frameworks. However, there are cases where you do not want
 to store the images in memory and still use your own generator.
 
@@ -34,10 +34,10 @@ minimum height and maximum height, all of them relative to the image size.
 A list of the current operations and parameters is:
 
 - <b>brightness</b>: (min_value, max_value) The values must for brightness must be between 0.05 and 10
-- <b>color_balance</b>: (min_value, max_value) color_balance must be between 0 and 10
-- <b>contrast</b>: (min_value, max_value) contrast must be between 0 and 10
+- <b>color_balance</b>: (min_value, max_value) The values for color balance must be between 0 and 10
+- <b>contrast</b>: (min_value, max_value) The values for contrast must be between 0 and 10
 - <b>flip</b>: 'horizontal' or 'hor', 'vertical' or 'ver', both
-- <b>greyscale</b>: []
+- <b>greyscale</b>: ()
 - <b>grid_mask</b>: (min_x_pos, max_x_pos, min_y_pos, max_y_pos, min_width_square, max_width_square,
             min_height_square, max_heigth_square, min_x_distance_between_squares,
             max_x_distance_between_squares, min_y_distance_between_squares, max_y_distance_between_squares)
